@@ -1,0 +1,14 @@
+name: Greeting Skill
+
+inputs:
+  name:
+    required: true
+    description: Person to greet
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        chmod +x ${{ github.action_path }}/greet.sh
+        ${{ github.action_path }}/greet.sh "${{ inputs.name }}"
