@@ -3,7 +3,7 @@ name: Greeting Skill
 inputs:
   name:
     required: true
-    description: Person to greet
+    description: Persons to greet
 
 runs:
   using: composite
