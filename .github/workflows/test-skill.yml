@@ -1,0 +1,17 @@
+name: Test Coverage Skill
+
+on:
+  workflow_dispatch:
+
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Simulate Skill Invocation
+        run: |
+          echo "Invoking Coverage Skill"
+          echo "Target Repo: repoa"
